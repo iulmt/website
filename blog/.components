@@ -5,5 +5,5 @@
 :script: none
 :renderer: haml
 :stylesheet: none
-:namespace: Web
+:namespace: Blog
 :migration_format: number

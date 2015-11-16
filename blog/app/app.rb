@@ -1,4 +1,4 @@
-module Web
+module Blog
   class App < Padrino::Application
     use ConnectionPoolManagement
     register Padrino::Mailer
