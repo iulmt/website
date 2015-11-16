@@ -6,6 +6,10 @@ module Blog
 
     enable :sessions
 
+    get '/' do
+        'test'
+    end
+
     ##
     # Caching support.
     #
