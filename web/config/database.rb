@@ -14,20 +14,41 @@
 #   }
 #
 ActiveRecord::Base.configurations[:development] = {
-  :adapter => 'sqlite3',
-  :database => Padrino.root('db', 'web_development.db')
+  :adapter   => 'mysql2',
+  :encoding  => 'utf8',
+  :reconnect => true,
+  :database  => 'web_development',
+  :pool      => 5,
+  :username  => 'root',
+  :password  => '',
+  :host      => 'localhost',
+  :socket    => '/tmp/mysql.sock'
 
 }
 
 ActiveRecord::Base.configurations[:production] = {
-  :adapter => 'sqlite3',
-  :database => Padrino.root('db', 'web_production.db')
+  :adapter   => 'mysql2',
+  :encoding  => 'utf8',
+  :reconnect => true,
+  :database  => 'web_production',
+  :pool      => 5,
+  :username  => 'root',
+  :password  => '',
+  :host      => 'localhost',
+  :socket    => '/tmp/mysql.sock'
 
 }
 
 ActiveRecord::Base.configurations[:test] = {
-  :adapter => 'sqlite3',
-  :database => Padrino.root('db', 'web_test.db')
+  :adapter   => 'mysql2',
+  :encoding  => 'utf8',
+  :reconnect => true,
+  :database  => 'web_test',
+  :pool      => 5,
+  :username  => 'root',
+  :password  => '',
+  :host      => 'localhost',
+  :socket    => '/tmp/mysql.sock'
 
 }
 
