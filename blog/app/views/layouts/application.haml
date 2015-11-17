@@ -1,0 +1,8 @@
+!!!
+%html
+  %title= @title
+  = stylesheet_link_tag 'css/bootstrap.min','css/bootstrap-theme.min'
+  %body(style='width:60%;margin:0 auto')
+    = yield
+
+    = javascript_include_tag 'js/bootstrap.min'

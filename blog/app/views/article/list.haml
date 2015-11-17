@@ -1,0 +1,13 @@
+%div
+	%table.table.table-bordered
+		%tr.warning
+			%th id
+			%th author
+			%th title
+		-unless @list.nil?
+			-@list.each do |item|
+				%tr.info
+					%td= item.id
+					%td= item.author
+					%td 
+						%a{:href=>"#{item.id}"}= item.title

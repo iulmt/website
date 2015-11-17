@@ -3,6 +3,9 @@
 module Blog
   class App
     module ArticleHelper
+    	def tenitem
+    		Article.select('*').order('id asc').limit(10)
+    	end
       # def simple_helper_method
       # ...
       # end

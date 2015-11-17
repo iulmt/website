@@ -7,7 +7,7 @@ module Blog
     enable :sessions
 
     get '/' do
-        'test'
+        render 'article/list'
     end
 
     ##

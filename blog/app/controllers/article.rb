@@ -20,11 +20,12 @@ Blog::App.controllers :article do
   # end
   
   get :list do
-
+    @list = tenitem
+    render 'article/list'
   end
 
   post :add do
-
+    
   end
 
   post :del do
